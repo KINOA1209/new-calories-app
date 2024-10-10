@@ -1,0 +1,1 @@
+export const CALRORY_LIMIT = 2100;
