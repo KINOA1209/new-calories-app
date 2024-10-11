@@ -1,6 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { PATH } from "./constant";
-import { HomePage, NotFoundPage, SignInPage, SignUpPage } from "pages";
+import { AddFoodPage, HomePage, NotFoundPage, SignInPage, SignUpPage } from "pages";
 import { PrivateRoute } from "components";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/ReactToastify.min.css";
@@ -12,6 +12,10 @@ function App() {
         <Route
           path={PATH.DASHBOARD}
           element={<PrivateRoute Page={HomePage} />}
+        />
+        <Route
+          path={PATH.ADD_FOOD}
+          element={<PrivateRoute Page={AddFoodPage} />}
         />
         <Route path={PATH.SIGN_IN} element={<SignInPage />} />
         <Route path={PATH.SIGN_UP} element={<SignUpPage />} />
