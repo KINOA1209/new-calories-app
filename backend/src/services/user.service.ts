@@ -17,10 +17,7 @@ export const createUser = async (
     return null;
   }
 
-  // Check the total number of users
   const userCount = await userRepository.count();
-
-  // Assign role based on user count
   const role = userCount === 0 ? Role.ADMIN : Role.USER;
   
   const user: UserEntity = userRepository.create({
