@@ -5,6 +5,7 @@ import { json as bodyParser } from "body-parser";
 import { Env } from "@/env";
 import { Logger } from "@/utils";
 import { MESSAGE } from "@/constant";
+import { appRouter } from "@/routes";
 import { errorHandlerMiddleware, routeMiddleware } from "@/middlewares";
 
 export const backendSetup = () => {
@@ -19,7 +20,7 @@ export const backendSetup = () => {
     res.send(MESSAGE.SERVER.HELLO_WORLD);
   });
 
-
+  app.use(`/api/${Env.version}`, appRouter);
 
   app.use(errorHandlerMiddleware);
 
