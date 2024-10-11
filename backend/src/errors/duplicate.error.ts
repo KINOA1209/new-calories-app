@@ -1,4 +1,4 @@
-import httpStatus from "http-status";
+const httpStatus = require('http-status');
 import { CustomError } from "./custom.error";
 
 export class DuplicateError extends CustomError {
