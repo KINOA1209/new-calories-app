@@ -61,5 +61,14 @@ export const updateUser = async (
 
 
 // Admin
+export const getAllUsers = async (): Promise<UserEntity[]> => {
+  const userRepository: Repository<UserEntity> =
+    AppDataSource.getRepository(UserEntity);
+
+  return await userRepository.find({
+    where: { role: Role.USER }, // Exclude ADMIN role
+    select: ["uuid", "name"], // Only select uuid and name for display
+  });
+};
 
 
