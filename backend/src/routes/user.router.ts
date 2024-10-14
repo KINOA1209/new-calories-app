@@ -7,3 +7,5 @@ export const userRouter = Router();
 userRouter.get("/", checkAuth, userController.getUserController);
 
 userRouter.put("/", checkAuth, userController.updateInfoController);
+
+userRouter.get("/users", checkAuth, userController.getAllUsersController);
