@@ -5,3 +5,5 @@ export * from "./SignUp";
 export * from "./Home";
 // user
 export * from "./AddFood";
+// admin
+export * from "./Statistics";
