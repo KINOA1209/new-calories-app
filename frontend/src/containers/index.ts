@@ -7,3 +7,4 @@ export * from "./Home";
 export * from "./AddFood";
 // admin
 export * from "./Statistics";
+export * from "./FoodManage";

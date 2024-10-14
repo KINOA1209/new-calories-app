@@ -7,7 +7,9 @@ export * from "./FormPassword";
 export * from "./PrivateRoute";
 // user
 export * from "./DatePicker";
-
-
+// admin
+export * from "./FoodTable";
+export * from "./UserList";
+export * from "./FoodModal";
 
 

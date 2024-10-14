@@ -6,3 +6,6 @@ export * from "./Home";
 export * from "./NotFound";
 // user
 export * from "./AddFood";
+// admin
+export * from "./Statistics";
+export * from "./FoodManage";
