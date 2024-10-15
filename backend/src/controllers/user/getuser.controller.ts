@@ -1,7 +1,7 @@
 import { Response } from "express";
 import { CommonRequest } from "@/types";
 import { errorHandlerWrapper } from "@/utils";
-const httpStatus = require('http-status');
+import httpStatus from "http-status";
 
 const getUserHandler = async (
   req: CommonRequest,

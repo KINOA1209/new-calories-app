@@ -24,7 +24,7 @@ export const createUser = async (
     name,
     email,
     password,
-    role: Role.USER,
+    role: role,
     calrory,
   });
   await userRepository.save(user);

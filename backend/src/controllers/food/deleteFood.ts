@@ -12,14 +12,12 @@ const deleteFoodHandler = async (
 ): Promise<void> => {
   const  { uuid }  = req.params;
  
-  console.log("hi", uuid)
   const success = await foodService.deleteFood(uuid);
 
   if (!success) {
     
     throw new NotFoundError(MESSAGE.ERROR.FOOD_NOT_FOUND);
   }
-  console.log(success, "fdfdfd")
 
   res.status(httpStatus.NO_CONTENT).json(success);
 };

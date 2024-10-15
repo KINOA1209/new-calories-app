@@ -5,7 +5,7 @@ import { CommonRequest } from "@/types";
 import { comparePassword, errorHandlerWrapper } from "@/utils";
 import { generateToken } from "@/utils";
 import { Response } from "express";
-const httpStatus = require('http-status');
+import httpStatus from "http-status";
 
 const signinHandler = async (
   req: CommonRequest,

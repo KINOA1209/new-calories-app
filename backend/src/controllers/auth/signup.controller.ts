@@ -4,7 +4,7 @@ import { userService } from "@/services";
 import { CommonRequest } from "@/types";
 import { encryptPassword, errorHandlerWrapper } from "@/utils";
 import { Response } from "express";
-const httpStatus = require('http-status');
+import httpStatus from "http-status";
 
 const signupHandler = async (
   req: CommonRequest,

@@ -2,8 +2,7 @@ import { Response } from "express";
 import { CommonRequest } from "@/types";
 import { errorHandlerWrapper } from "@/utils";
 import { userService } from "@/services";
-const httpStatus = require('http-status');
-
+import httpStatus from "http-status";
 
 const getAllUsersHandler = async (req: CommonRequest, res: Response): Promise<void> => {
   const users = await userService.getAllUsers();

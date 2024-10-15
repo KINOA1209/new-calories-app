@@ -2,7 +2,7 @@ import { Response } from "express";
 import { CommonRequest } from "@/types";
 import { errorHandlerWrapper } from "@/utils";
 import { foodService } from "@/services";
-const httpStatus = require('http-status');
+import httpStatus from "http-status";
 
 const getFoodHandler = async (
   req: CommonRequest,
